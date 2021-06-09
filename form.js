@@ -47,6 +47,13 @@ class Form{
         this.reset.mousePressed(() => {
             player.updateCount(0);
             game.update(0);
+            this.input.show();
+            this.title.show();
+            this.button.show();
+            this.greeting.hide();
+            player.score1 = 0;
+            player.score2 = 0;
+            player.distance = 0;
         });
 
     }
